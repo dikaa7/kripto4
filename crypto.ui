@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>637</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Crack Your Code</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>P</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>120</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Q</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>240</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Encoded Text</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>340</y>
+      <width>111</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Result</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="encButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>440</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Encrypt</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="decButton">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>440</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Decrypt</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>261</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RSA, Elgamal, Pailer Cryptosystem</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>101</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Choose Algoritm</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rsa">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>70</y>
+      <width>97</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>RSA</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="elgamal">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>90</y>
+      <width>97</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ElGamal</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="pailer">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>110</y>
+      <width>97</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pailler</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="p">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Masukkan sebuah bilangan prima</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="q">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Masukkan sebuah bilangan prima</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="encoded">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>270</y>
+      <width>511</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Masukkan Text, Untuk dekripsi text dalam bentuk angka, contoh 34,23,12</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="result">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>370</y>
+      <width>511</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Hasiil Enkripsi / Dekripsi</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="info">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>500</y>
+      <width>511</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Program Info</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="g">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>170</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Masukkan sebuah G antara nilai 1 hingga P-1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>21</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>G</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
